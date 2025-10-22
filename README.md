@@ -39,14 +39,19 @@ Developed two scalable AWS-based architectures — **Full Cloud Migration** and 
 - **Lambda Functions**: Execute booking logic, verify seat availability, and manage SQS queues.  
 - **DynamoDB**: Maintains ticket inventory using **optimistic locking** to prevent double booking.  
 - **ElastiCache**: Caches real-time seat data for faster lookups.  
-- **SQS**: Queues requests during DynamoDB spikes to prevent dropped transactions.  
+- **SQS**: Queues requests during DynamoDB spikes to prevent dropped transactions.
+
+![Solution 1 Architecture](Career Simulation 1 (Option 1).gif)
 
 **Solution 2 – Hybrid Cloud (Burst Model)**  
 - **Route 53**: Routes between on-prem and AWS resources dynamically based on load.  
 - **On-Prem Servers**: Handle standard demand for cost efficiency.  
 - **AWS EC2 + Auto Scaling**: Activates during high-demand periods.  
 - **DMS (Database Migration Service)**: Synchronizes data between on-prem and cloud databases.  
-- **SQS + Lambda**: Process queued requests and maintain user responsiveness during transitions.  
+- **SQS + Lambda**: Process queued requests and maintain user responsiveness during transitions.
+  
+![Solution 2 Architecture](Solution 2.gif)
+
 
 ---
 
