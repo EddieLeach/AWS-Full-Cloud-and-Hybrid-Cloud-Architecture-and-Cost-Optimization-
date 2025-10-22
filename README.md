@@ -41,7 +41,7 @@ Developed two scalable AWS-based architectures — **Full Cloud Migration** and 
 - **ElastiCache**: Caches real-time seat data for faster lookups.  
 - **SQS**: Queues requests during DynamoDB spikes to prevent dropped transactions.
 
-![Solution 1 Architecture](Career Simulation 1 (Option 1).gif)
+![Solution 1 Architecture](Solution_1.gif)
 
 **Solution 2 – Hybrid Cloud (Burst Model)**  
 - **Route 53**: Routes between on-prem and AWS resources dynamically based on load.  
@@ -50,7 +50,7 @@ Developed two scalable AWS-based architectures — **Full Cloud Migration** and 
 - **DMS (Database Migration Service)**: Synchronizes data between on-prem and cloud databases.  
 - **SQS + Lambda**: Process queued requests and maintain user responsiveness during transitions.
   
-![Solution 2 Architecture](Solution 2.gif)
+![Solution 2 Architecture](Solution_2.gif)
 
 
 ---
